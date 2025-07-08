@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSM'S Mod Repository</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@100;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-black">
+
+  <!-- Arka plan resimleri -->
+  <div class="image-container">
+    <img src="images/bg1.png" class="bg-blur" />
+    <img src="images/bg2.png" class="bg-blur" />
+    <img src="images/bg3.png" class="bg-blur" />
+    <img src="images/bg4.png" class="bg-blur" />
+    <img src="images/bg5.png" class="bg-blur" />
+  </div>
+
+  <div class="frame"></div>
+  <div class="stars"></div>
+
+ <a href="index.html">
+  <img src="images/logo.png" class="logo" alt="Logo" />
+</a>
+
+  <!-- 3 Dikdörtgen -->
+  <div class="rectangle-container">
+
+    <!-- 1 -->
+    <div class="rectangle">
+      <div class="image-name-container">
+        <img src="images/duperion.png" class="profile-image" alt="Profile" />
+        <p class="profile-name">DUPERION</p>
+      </div>
+      <div class="button-grid">
+        <div class="button-row">
+          <a href="https://rebrand.ly/Duperion" target="_blank" class="button">Download</a>
+          <a href="https://youtu.be/4b2gF0lnA1Y" target="_blank" class="button">Videos</a>
+        </div>
+        <div class="button-row">
+          <button class="button" onclick="openPopup('popup-features-duperion')">Features</button>
+          <button class="button" onclick="openPopup('popup-commands-duperion')">Commands</button>
+        </div>
+        <div class="button-row full-width">
+          <button class="button" onclick="openPopup('popup-changelog-duperion')">Changelog</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="rectangle rectangle-middle">
+      <div class="image-name-container">
+        <img src="images/tsmclient.png" class="profile-image" alt="Profile" />
+        <p class="profile-name">TSM CLIENT</p>
+      </div>
+      <div class="button-grid">
+        <div class="button-row">
+          <a href="https://rebrand.ly/TSM_Client" target="_blank" class="button">Download</a>
+          <a href="https://youtu.be/6Ng6tPtm-Sk" target="_blank" class="button">Videos</a>
+        </div>
+        <div class="button-row">
+          <button class="button" onclick="openPopup('popup-features-tsmclient')">Features</button>
+          <button class="button" onclick="openPopup('popup-commands-tsmclient')">Commands</button>
+        </div>
+        <div class="button-row full-width">
+          <button class="button" onclick="openPopup('popup-changelog-tsmclient')">Changelog</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="rectangle">
+      <div class="image-name-container">
+        <img src="images/harp.png" class="profile-image" alt="Profile" />
+        <p class="profile-name">HARP MACRO</p>
+      </div>
+      <div class="button-grid">
+        <div class="button-row">
+          <a href="https://rebrand.ly/AutoHarp" target="_blank" class="button">Download</a>
+          <a href="https://youtu.be/_RSko7JFyW8" target="_blank" class="button">Videos</a>
+        </div>
+        <div class="button-row">
+          <button class="button" onclick="openPopup('popup-features-harpmacro')">Features</button>
+          <button class="button" onclick="openPopup('popup-commands-harpmacro')">Commands</button>
+        </div>
+        <div class="button-row full-width">
+          <button class="button" onclick="openPopup('popup-changelog-harpmacro')">Changelog</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Hamburger Menü -->
+<div class="menu-wrapper">
+  <button id="menu-toggle" class="hamburger-btn">☰</button>
+
+  <div id="side-menu" class="side-menu hidden">
+    <button class="close-btn" id="menu-close">✕</button>
+
+    <a href="index.html" class="menu-link">Home</a>
+    <a href="about.html" class="menu-link">About</a>
+
+    <div class="dropdown">
+      <button class="menu-link dropdown-toggle">Cracked Mods ▾</button>
+      <div class="dropdown-content hidden">
+        <a href="polar.html" class="submenu-link">POLAR CLIENT</a>
+        <a href="sbe.html" class="submenu-link">SBE</a>
+        <a href="taunhai.html" class="submenu-link">TAUNHAI</a>
+        <a href="oringo.html" class="submenu-link">ORINGO</a>
+      </div>
+    </div>
+
+    <a href="#" class="menu-link">VirusTotal</a>
+    <a href="#" class="menu-link">YouTube</a>
+  </div>
+</div>
+
+<!-- Duperion Popup -->
+<div id="popup-features-duperion" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup-features-duperion')">&times;</span>
+    <h2>Duperion Features</h2>
+    <p>🔥 Unlock the ULTIMATE Hypixel Skyblock dupe glitch to get UNLIMITED MONEY FAST! 💸 Follow this step-by-step guide to skyrocket your coins in 
+2025! 🚀.</p>
+  </div>
+</div>
+
+<!-- TSM Client Popup -->
+<div id="popup-features-tsmclient" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup-features-tsmclient')">&times;</span>
+    <h2>TSM Client Features</h2>
+    <p>TSM Client is all in one macro everything from a to z u can find 🔥.</p>
+  </div>
+</div>
+
+<!-- Harp Macro Popup -->
+<div id="popup-features-harpmacro" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup-features-harpmacro')">&times;</span>
+    <h2>Harp Macro Features</h2>
+    <p>With high ping 0 effort u can get free epic talisman and finish the all quest.</p>
+  </div>
+</div>
+
+<!-- === Commands === -->
+<div id="popup-commands-duperion" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup-commands-duperion')">&times;</span>
+    <h2>Duperion Commands</h2>
+    <p>/duperion dupe 1m (m = min, 0.1m = sec)</p>
+    <p>It will spike your server to dupe. Use at your own risk.</p>
+  </div>
+</div>
+
+<div id="popup-commands-tsmclient" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup-commands-tsmclient')">&times;</span>
+    <h2>TSM Client Commands</h2>
+    <p>/tsm autoenable</p>
+    <p>/tsm warp garden</p>
+    <p>/tsm toggle aura</p>
+  </div>
+</div>
+
+<div id="popup-commands-harpmacro" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup-commands-harpmacro')">&times;</span>
+    <h2>Harp Macro Commands</h2>
+    <p>/harp start</p>
+    <p>/harp note delay [ms]</p>
+  </div>
+</div>
+
+<!-- === Changelog === -->
+<div id="popup-changelog-duperion" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup-changelog-duperion')">&times;</span>
+    <h2>Duperion Changelog</h2>
+    <p>• v1.2 - Duplication method updated</p>
+    <p>• v1.1 - Added auto-sell feature</p>
+  </div>
+</div>
+
+<div id="popup-changelog-tsmclient" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup-changelog-tsmclient')">&times;</span>
+    <h2>TSM Client Changelog</h2>
+    <p>• v2.0 - GUI redesign</p>
+    <p>• v1.8 - New failsafe added</p>
+  </div>
+</div>
+
+<div id="popup-changelog-harpmacro" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup-changelog-harpmacro')">&times;</span>
+    <h2>Harp Macro Changelog</h2>
+    <p>• v1.4 - Reduced latency on click</p>
+    <p>• v1.2 - Fixed note miss issue</p>
+  </div>
+</div>
+
+  <div class="footer-text">© TSM 2019-2025</div>
+  <script src="main.js"></script>
+</body>
+</html>
